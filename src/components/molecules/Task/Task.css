@@ -1,0 +1,12 @@
+.task {
+  border: 1px solid var(--primary);
+  padding: 1rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.task__name {
+  flex: 1;
+}

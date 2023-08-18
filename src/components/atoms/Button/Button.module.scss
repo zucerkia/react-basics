@@ -1,0 +1,24 @@
+.button {
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  color: var(--accent);
+
+  &--secondary {
+    background-color: var(--secondary);
+  }
+
+  &--tertiary {
+    background-color: var(--tertiary);
+  }
+
+  &--primary {
+    background-color: var(--primary);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: gray;
+  }
+}

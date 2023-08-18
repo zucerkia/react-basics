@@ -1,8 +1,15 @@
 import PropTypes from "prop-types";
 
+import styles from "./Button.module.scss";
+
+const { button } = styles;
 const Button = ({ typeButton, children, ...rest }) => {
+  console.log(styles["button--secondary"]);
   return (
-    <button {...rest} className={`button ${typeButton}`}>
+    <button
+      {...rest}
+      className={`${button} ${styles[`button--${typeButton}`]}`}
+    >
       {children}
     </button>
   );

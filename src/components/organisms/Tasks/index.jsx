@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 
+import "./Tasks.css";
 const Tasks = ({ children }) => {
   return <section className="tasks">{children}</section>;
 };

@@ -1,8 +1,9 @@
 import { useEffect } from "react";
-
 import PropTypes from "prop-types";
 
 import Button from "../../atoms/Button";
+
+import "./Task.css";
 
 const Task = ({ task, onDelete, onCheck }) => {
   useEffect(() => {
@@ -21,7 +22,7 @@ const Task = ({ task, onDelete, onCheck }) => {
         id={task.id}
         checked={task.checked}
       />
-      <span>{task.name}</span>
+      <span className="task__name">{task.name}</span>
       <Button onClick={() => onDelete(task.id)} typeButton="tertiary">
         Eliminar
       </Button>

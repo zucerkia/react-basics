@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  padding: 2rem;
+  color: var(--accent);
+  box-sizing: border-box;
+}
+
+.header__links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--accent);
+}
+
+.header-content {
+  color: antiquewhite;
+}
